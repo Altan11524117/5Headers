@@ -21,7 +21,7 @@ function Header3() {
     }
   };
 
-  // Ekran boyutu değişince hamburger menüyü kapat
+  
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -31,7 +31,7 @@ function Header3() {
 
     window.addEventListener('resize', handleResize);
 
-    // Temizlik (component unmount olunca eventListener'ı kaldır)
+   
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
